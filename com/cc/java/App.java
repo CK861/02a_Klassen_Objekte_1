@@ -14,9 +14,16 @@ public class App {
         cat.age = 35;
 
         // Ausgabe
-        System.out.println(cat.tellYourName());
-        System.out.println(cat.tellYourFurColor());
-        System.out.println(cat.tellYourAge());
+        // System.out.println(cat.tellYourName());
+        // System.out.println(cat.tellYourFurColor());
+        // System.out.println(cat.tellYourAge());
+
+       output(cat.tellYourName());
+       output(cat.tellYourFurColor());
+       output(String.valueOf(cat.tellYourAge()));
+
+       
+
 
         System.out.println("---------------");
 
@@ -29,15 +36,20 @@ public class App {
         cat2.age = 29;
 
         // Ausgabe
-        System.out.println(cat2.name);
-        System.out.println(cat2.furColor);
-        System.out.println(cat2.age);
+        System.out.println(cat2.tellYourName());
+        System.out.println(cat2.tellYourFurColor());
+        System.out.println(cat2.tellYourAge());
         
-
+        output(cat2.tellYourName());
+        output(cat2.tellYourFurColor());
+        output(String.valueOf(cat2.tellYourAge()));
 
     }
 
-    public void outout(String outputString)
-{
-    System.out.println(outputString);
+    public static void output(String outputString)
+    {
+
+        System.out.println(outputString);
+
+    }
 }
