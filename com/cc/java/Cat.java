@@ -6,11 +6,21 @@ public class Cat {
     String furColor;
     int age;
 
-    public void tellYourName()
+    public String tellYourName()
     {
-        System.out.println(this.name);
+       return this.name;
     }
 
+    public String tellYourFurColor()
+    {
+       return this.furColor;
+    }
+    public int tellYourAge()
+    {
+       return this.age; 
+    }
+    
+    
 public void sayHello()
 {
     System.out.println("HELLLOOOO");

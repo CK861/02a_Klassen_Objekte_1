@@ -14,9 +14,9 @@ public class App {
         cat.age = 35;
 
         // Ausgabe
-        System.out.println(cat.name);
-        System.out.println(cat.furColor);
-        System.out.println(cat.age);
+        System.out.println(cat.tellYourName());
+        System.out.println(cat.tellYourFurColor());
+        System.out.println(cat.tellYourAge());
 
         System.out.println("---------------");
 
