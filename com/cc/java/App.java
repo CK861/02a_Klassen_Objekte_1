@@ -37,6 +37,7 @@ public class App {
 
     }
 
-   
-
+    public void outout(String outputString)
+{
+    System.out.println(outputString);
 }
