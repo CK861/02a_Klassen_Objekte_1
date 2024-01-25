@@ -5,51 +5,30 @@ public class App {
     public static void main(String[] args) {
 
         // Objekt erzeugen
-        Cat cat = new Cat(); 
-        System.out.println(cat);
-
-        // Wertzuweisung
-        cat.name = "Alonzo";
-        cat.furColor = "grey";
-        cat.age = 35;
+        Cat cat = new Cat("Alonzo", "grey", 35); 
 
         // Ausgabe
-        // System.out.println(cat.tellYourName());
-        // System.out.println(cat.tellYourFurColor());
-        // System.out.println(cat.tellYourAge());
+        output(cat.getName());
+        output(cat.getFurColor());
+        output(String.valueOf(cat.getAge()));  // int --> String
 
-       output(cat.tellYourName());
-       output(cat.tellYourFurColor());
-       output(String.valueOf(cat.tellYourAge()));
+        // output(cat.name);
 
-       
+        output("---------------");
 
+        Cat cat2 = new Cat("Grizabella", "white", 29);
 
-        System.out.println("---------------");
+        // Ausgabe
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));  // int --> String
 
-        Cat cat2 = new Cat();
-        System.out.println(cat2);
+    }
+
+   // statische Methode --- in Klasse
+    public static void output(String outputStr){
+        System.out.println(outputStr);
+    }
       
-        // Wertzuweisung
-        cat2.name = "Grizabella";
-        cat2.furColor = "white";
-        cat2.age = 29;
 
-        // Ausgabe
-        System.out.println(cat2.tellYourName());
-        System.out.println(cat2.tellYourFurColor());
-        System.out.println(cat2.tellYourAge());
-        
-        output(cat2.tellYourName());
-        output(cat2.tellYourFurColor());
-        output(String.valueOf(cat2.tellYourAge()));
-
-    }
-
-    public static void output(String outputString)
-    {
-
-        System.out.println(outputString);
-
-    }
 }
